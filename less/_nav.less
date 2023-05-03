@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #1B1C1F; 
+}
+@nav: #323335;
+.navigation {
+    background-color: @nav;
+    border-radius: 24px;
+    width: 416px;
+    justify-content: center;
+}
+@media (max-width: 991px) {
+    .menu-bg {
+        background-color: @nav;
+    }
+    .menu-btn {
+        background-color: #fff;
+    }
+    .nav-link:nth-child(2) {
+        margin: 0 !important;
+    }
+    .btn-purple {
+        display: block;
+    }
+    .dota-box, .fortnite-box, .gta-box {
+        height: 100%;
+        background-image: none;
+    }
+    .img-mobile {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .img-mobile img {
+        width: 450px;
+    }
+}
